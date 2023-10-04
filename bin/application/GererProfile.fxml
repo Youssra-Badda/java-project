@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="centre3" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" style="-fx-background-radius: 9;" styleClass="container" stylesheets="@../ressources/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GererProfileController">
+   <children>
+      <Label layoutX="34.0" layoutY="26.0" prefHeight="30.0" prefWidth="212.0" text="MES INFORMATIONS " textFill="#2d14d3">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button graphicTextGap="9.0" layoutX="167.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#ConsulterFiche" prefHeight="62.0" prefWidth="237.0" style="-fx-border-color: #fc9300; -fx-border-radius: 4; -fx-background-color: #ffffff; -fx-border-width: 0px 0px 0px 4px;" styleClass="shadow" stylesheets="@../ressources/style.css" text="Consulter Ma fiche " textFill="#fc9300">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Button>
+      <Button graphicTextGap="9.0" layoutX="167.0" layoutY="205.0" mnemonicParsing="false" onMouseClicked="#modifierCor" prefHeight="62.0" prefWidth="237.0" style="-fx-border-color: #c967da; -fx-border-radius: 4; -fx-background-color: #ffffff; -fx-border-width: 0px 0px 0px 4px;" styleClass="shadow" stylesheets="@../ressources/style.css" text="Modefier coordonnees" textFill="#c967da">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Button>
+      <Button graphicTextGap="9.0" layoutX="167.0" layoutY="336.0" mnemonicParsing="false" onMouseClicked="#changeMP" prefHeight="62.0" prefWidth="237.0" style="-fx-border-color: #7bbdd3; -fx-border-radius: 4; -fx-background-color: #ffffff; -fx-border-width: 0px 0px 0px 4px;" styleClass="shadow" stylesheets="@../ressources/style.css" text="Modifier mot de passe" textFill="#7bbdd3">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="34.0" layoutY="296.0" text="Mon Compte " textFill="#2d14d3">
+         <font>
+            <Font name="Arial Bold" size="19.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

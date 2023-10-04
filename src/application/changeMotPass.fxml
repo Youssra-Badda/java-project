@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" style="-fx-background-radius: 9; -fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.changeMotPassController">
+   <children>
+      <Pane layoutX="22.0" layoutY="28.0" prefHeight="391.0" prefWidth="507.0" styleClass="container2" stylesheets="@../ressources/style.css">
+         <children>
+            <Button layoutX="52.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#valider" prefHeight="47.0" prefWidth="98.0" style="-fx-background-color: #4b50ec; -fx-border-color: #ffffff; -fx-border-radius: 4; -fx-border-width: 3;" text="Valider" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Button>
+            <Label layoutX="4.0" layoutY="6.0" prefHeight="32.0" prefWidth="492.0" style="-fx-background-color: #f5f5f5;" text="             Changement mot de passe" textFill="#4b50ec">
+               <font>
+                  <Font name="Bodoni MT Condensed" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="92.0" text="Ancien mot de passe :" textFill="#00b3e4">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font></Label>
+            <Label layoutX="20.0" layoutY="135.0" text="Nouveau mot de passe :" textFill="#00b3e4">
+               <font>
+                  <Font name="Arial" size="19.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="182.0" text="Confirmer  mot de passe :" textFill="#00b3e4">
+               <font>
+                  <Font size="19.0" />
+               </font></Label>
+            <Label fx:id="erreur" layoutX="42.0" layoutY="215.0" />
+            <PasswordField fx:id="password" layoutX="300.0" layoutY="91.0" prefHeight="25.0" prefWidth="196.0" />
+            <PasswordField fx:id="NvPassword" layoutX="300.0" layoutY="134.0" prefHeight="25.0" prefWidth="196.0" />
+            <PasswordField fx:id="confermePassword" layoutX="300.0" layoutY="183.0" prefHeight="25.0" prefWidth="196.0" />
+            <Pane fx:id="verifierMP" layoutX="89.0" layoutY="38.0" prefHeight="42.0" prefWidth="307.0" visible="false">
+               <children>
+                  <ImageView fitHeight="17.0" fitWidth="18.0" layoutX="23.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/erreur.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="48.0" layoutY="13.0" prefHeight="17.0" prefWidth="227.0" text="le mot de passe  saise est incorrect" textFill="#f20000" />
+               </children>
+            </Pane>
+            <Pane fx:id="confirmerMP" layoutX="112.0" layoutY="224.0" prefHeight="42.0" prefWidth="280.0" visible="false">
+               <children>
+                  <Label layoutX="33.0" layoutY="11.0" prefHeight="17.0" prefWidth="196.0" text="la confirmation n'est pas correct" textFill="RED" />
+                  <ImageView fitHeight="17.0" fitWidth="27.0" layoutX="8.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/erreur.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label fx:id="BienValide" layoutX="183.0" layoutY="274.0" prefHeight="17.0" prefWidth="271.0" text="la modefication de mot de pase est bien effectue" textFill="#0cbf1e" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

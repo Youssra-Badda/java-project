@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="553.0" prefWidth="770.0" styleClass="gradient-background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProfBienvenulController">
+   <cursor>
+      <Cursor fx:constant="DISAPPEAR" />
+   </cursor>
+   <children>
+      <Pane prefHeight="61.0" prefWidth="770.0">
+         <children>
+            <Label layoutX="137.0" layoutY="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2.0" prefWidth="373.0" style="-fx-background-color: white;" />
+            <ImageView fx:id="iconProfile" fitHeight="39.0" fitWidth="51.0" layoutX="711.0" layoutY="9.0" onMouseClicked="#afficherProfile" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+               <image>
+                  <Image url="@../image/profile%20(2).png" />
+               </image>
+            </ImageView>
+            <Text fx:id="User" fill="WHITE" layoutX="606.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="105.0732421875">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <Separator layoutX="592.0" layoutY="4.0" orientation="VERTICAL" prefHeight="57.0" prefWidth="2.0" />
+            <ImageView fx:id="ActualiteIcon" fitHeight="58.0" fitWidth="39.0" layoutX="536.0" layoutY="9.0" onMouseClicked="#Actualite" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+               <image>
+                  <Image url="@../../../../Downloads/icons8-nuage-actualiser-50%20(1).png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="81.0" layoutX="14.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/t1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="73.0" prefHeight="471.0" prefWidth="198.0" style="-fx-background-radius: 10px;" styleClass="dahbord" stylesheets="@Style.css">
+         <children>
+            <Separator layoutX="7.0" layoutY="64.0" opacity="0.22" prefHeight="2.0" prefWidth="185.0" />
+            <HBox layoutX="14.0" layoutY="-4.0" prefHeight="69.0" prefWidth="185.0">
+               <children>
+                  <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="183.0" styleClass="buttonDashbord">
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                     <children>
+                        <ImageView fx:id="home" fitHeight="39.0" fitWidth="39.0" layoutX="14.0" layoutY="11.0" onMouseClicked="#GoHome" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../../Downloads/icons8-page-d’accueil-32.png" />
+                           </image>
+                        </ImageView>
+                        <Text fill="WHITE" layoutX="78.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="Home">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <Pane layoutX="10.0" layoutY="80.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="179.0" styleClass="buttonDashbord" stylesheets="@Style.css">
+               <children>
+                  <ImageView fx:id="cour" fitHeight="29.0" fitWidth="39.0" layoutX="23.0" layoutY="14.0" onMouseClicked="#coursMng" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../../../../Downloads/icons8-livre-50.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="66.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="Gerer cours" wrappingWidth="98.0146484375">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="10.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="179.0" styleClass="buttonDashbord" stylesheets="@Style.css">
+               <children>
+                  <ImageView fx:id="etd" fitHeight="29.0" fitWidth="29.0" layoutX="23.0" layoutY="16.0" onMouseClicked="#Etudiant" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../../../../Downloads/icons8-étudiant-homme-24.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="70.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="Etudiants">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="204.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="179.0" styleClass="buttonDashbord">
+               <children>
+                  <ImageView fx:id="personnel" fitHeight="29.0" fitWidth="29.0" layoutX="28.0" layoutY="16.0" onMouseClicked="#CheckPersonnel" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../../../../Downloads/icons8-groupe-premier-plan-sélectionné-30.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="75.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="Personnel">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="7.0" layoutY="265.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="179.0" styleClass="buttonDashbord">
+               <children>
+                  <ImageView fx:id="proIcon" fitHeight="29.0" fitWidth="29.0" layoutX="26.0" layoutY="15.0" onMouseClicked="#GoProfile" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../image/profile%20(2).png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="79.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="Profile">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Pane layoutX="19.0" layoutY="335.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="179.0" styleClass="buttonDashbord">
+               <children>
+                  <ImageView fx:id="logout" fitHeight="29.0" fitWidth="29.0" layoutX="14.0" layoutY="16.0" onMouseClicked="#Logout" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                     <image>
+                        <Image url="@../../../../Downloads/icons8-déconnexion-30.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="59.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="shadow" text="Déconnexion">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane fx:id="PaneAffichage" layoutX="218.0" layoutY="83.0" prefHeight="460.0" prefWidth="538.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 10px;" />
+   </children>
+</AnchorPane>

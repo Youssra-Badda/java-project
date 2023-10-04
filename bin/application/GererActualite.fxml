@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="centreActualite" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 9;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GererActualiteController">
+   <children>
+      <HBox layoutX="107.0" layoutY="14.0" onMouseClicked="#consulterAct" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 9;" styleClass="shadow">
+         <children>
+            <Label prefHeight="89.0" prefWidth="8.0" style="-fx-background-color: #c967da;" />
+            <HBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="263.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="167.0" text="Consulter Actualite" textFill="#c967daba">
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="107.0" layoutY="120.0" onMouseClicked="#modifierAct" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 9;" styleClass="shadow">
+         <children>
+            <Label prefHeight="89.0" prefWidth="8.0" style="-fx-background-color: #ffbb00;" />
+            <HBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="263.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="159.0" text="Modefier Actualite" textFill="#ffbb00ba">
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="107.0" layoutY="230.0" onMouseClicked="#ajouterActualiter" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 9;" styleClass="shadow">
+         <children>
+            <Label prefHeight="89.0" prefWidth="8.0" style="-fx-background-color: #7bbdd3;" />
+            <HBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="263.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="159.0" text="Ajouter Actualite" textFill="#7bbdd3ba">
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="107.0" layoutY="342.0" onMouseClicked="#suprimerActualite" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 9;" styleClass="shadow">
+         <children>
+            <Label prefHeight="89.0" prefWidth="8.0" style="-fx-background-color: #ff0080;" />
+            <HBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="263.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="161.0" text="Suprimer Actualite" textFill="#ff0080ba">
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="profA" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 9;" stylesheets="@../ressources/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GererProfController">
+   <children>
+      <HBox layoutX="117.0" layoutY="44.0" onMouseClicked="#modifierProf" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 9;" styleClass="shadow">
+         <children>
+            <Label prefHeight="89.0" prefWidth="8.0" style="-fx-background-color: #ffbb00;" textFill="#ffbb00" />
+            <HBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="263.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="144.0" text="Modefier Prof" textFill="#ffbb00">
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="117.0" layoutY="172.0" onMouseClicked="#ajouterProf" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 9;" styleClass="shadow">
+         <children>
+            <Label prefHeight="89.0" prefWidth="8.0" style="-fx-background-color: #c967da;" />
+            <HBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="263.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="129.0" text="Ajouter Prof" textFill="#c967daba">
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox layoutX="117.0" layoutY="304.0" onMouseClicked="#suprimeProf" prefHeight="84.0" prefWidth="270.0" style="-fx-background-color: white; -fx-background-radius: 9;" stylesheets="@../ressources/style.css">
+         <children>
+            <Label prefHeight="89.0" prefWidth="8.0" style="-fx-background-color: #7bbdd3;" />
+            <HBox alignment="TOP_CENTER" prefHeight="73.0" prefWidth="263.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="25.0" prefWidth="136.0" text="Suprimer Prof" textFill="#7bbdd3">
+                     <padding>
+                        <Insets top="3.0" />
+                     </padding>
+                     <font>
+                        <Font name="Arial Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </HBox>
+         </children>
+         <styleClass>
+            <String fx:value="buttonDashbord" />
+            <String fx:value="shadow" />
+         </styleClass>
+      </HBox>
+   </children>
+</AnchorPane>

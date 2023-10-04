@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EtudiantController">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="545.0" prefWidth="919.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 10px;" stylesheets="@application.css">
+         <children>
+            <TableView fx:id="tableEtudiant" prefHeight="439.0" prefWidth="577.0">
+               <columns>
+                  <TableColumn fx:id="CNE" text="CNE" />
+                  <TableColumn fx:id="nom" text="Nom" />
+                  <TableColumn fx:id="prenom" prefWidth="75.0" text="Prenom" />
+                  <TableColumn fx:id="emailA" prefWidth="170.0" text="Email Acadamique" />
+                  <TableColumn fx:id="emailP" prefWidth="170.0" text="Email Personnel" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ConsulterPubController">
+  <content>
+    <AnchorPane fx:id="tablePane" minHeight="0.0" minWidth="0.0" prefHeight="533.0" prefWidth="914.0" stylesheets="@application.css">
+         <children>
+            <TableView fx:id="TableCours" layoutY="41.0" prefHeight="402.0" prefWidth="851.0">
+              <columns>
+                <TableColumn fx:id="idDoc" prefWidth="30.0" text="id" />
+                <TableColumn fx:id="titre" prefWidth="100.0" text="Titre" />
+                  <TableColumn fx:id="type" prefWidth="100.0" text="Type" />
+                  <TableColumn fx:id="profs" prefWidth="100.0" text="Professeur" />
+                  <TableColumn fx:id="niv" prefWidth="100.0" text="Niveau" />
+                  <TableColumn fx:id="mod" prefWidth="100.0" text="Module" />
+                  <TableColumn fx:id="date" prefWidth="100.0" text="Date" />
+                  <TableColumn fx:id="file" prefWidth="120.0" text="file" />
+                  <TableColumn fx:id="ColEdit" prefWidth="100.0" text="Modifier" />
+              </columns>
+            </TableView>
+            <ImageView fx:id="refresh" fitHeight="34.0" fitWidth="34.0" layoutX="6.0" layoutY="7.0" onMouseClicked="#refreshTable" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/icons8-refresh-shield-64.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="centre" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" style="-fx-background-color: #cfd4d7; -fx-background-radius: 9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <Label layoutX="34.0" layoutY="7.0" prefHeight="17.0" prefWidth="343.0" text="Bienvenue sur la plateforme e-Personnel" textFill="#3775a1">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <VBox layoutX="13.0" layoutY="43.0" prefHeight="181.0" prefWidth="512.0" styleClass="container" stylesheets="@../ressources/style.css">
+         <children>
+            <Label fx:id="nomprenom1" alignment="CENTER" prefHeight="39.0" prefWidth="185.0" styleClass="shadow" stylesheets="@../ressources/style.css" text="SOCIAL MEDIA" textFill="#3775a1">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Label>
+            <HBox prefHeight="142.0" prefWidth="481.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="142.0" prefWidth="174.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../../Downloads/icons8-logo-google-50.png" />
+                           </image>
+                        </ImageView>
+                        <Hyperlink alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#GoogleEnsah" prefHeight="37.0" prefWidth="112.0" styleClass="shadow" text="Google" textFill="#3775a1">
+                           <font>
+                              <Font name="Arial" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets top="2.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </VBox>
+                  <Pane maxHeight="-Infinity" prefHeight="90.0" prefWidth="1.0" styleClass="line-color" stylesheets="@../ressources/style.css" />
+                  <VBox alignment="CENTER" prefHeight="142.0" prefWidth="175.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../../Downloads/icons8-linkedin-2-50.png" />
+                           </image>
+                        </ImageView>
+                        <Hyperlink alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#LinkdinEnsah" prefHeight="42.0" prefWidth="112.0" styleClass="shadow" text="Linkdin" textFill="#3775a1">
+                           <font>
+                              <Font name="Arial" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets top="2.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </VBox>
+                  <Pane maxHeight="-Infinity" prefHeight="90.0" prefWidth="1.0" styleClass="line-color" stylesheets="@../ressources/style.css" />
+                  <VBox alignment="CENTER" prefHeight="142.0" prefWidth="158.0">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" styleClass="shadow">
+                           <image>
+                              <Image url="@../../../../Downloads/icons8-facebook-nouveau-50.png" />
+                           </image>
+                        </ImageView>
+                        <Hyperlink alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#FbEnsah" prefHeight="42.0" prefWidth="112.0" styleClass="shadow" text="Facebook" textFill="#3775a1">
+                           <font>
+                              <Font name="Arial" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets top="2.0" />
+                           </padding>
+                        </Hyperlink>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="13.0" layoutY="240.0" prefHeight="206.0" prefWidth="512.0">
+         <children>
+            <VBox prefHeight="179.0" prefWidth="504.0" styleClass="container" stylesheets="@../ressources/style.css">
+               <children>
+                  <Label fx:id="nomprenom12" alignment="CENTER" prefHeight="26.0" prefWidth="473.0" styleClass="shadow" stylesheets="@../ressources/style.css" text="Statistiques d'accès à ePersonnel" textFill="#3775a1">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets top="5.0" />
+                     </padding>
+                  </Label>
+                  <LineChart fx:id="corps" legendVisible="false" prefHeight="199.0" prefWidth="504.0">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                     <styleClass>
+                        <String fx:value="axis" />
+                        <String fx:value="chart-series-line" />
+                        <String fx:value="chart-line-symbol" />
+                     </styleClass>
+                  </LineChart>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

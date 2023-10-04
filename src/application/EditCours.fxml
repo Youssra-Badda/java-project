@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#upFliere" prefHeight="600.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.EditCoursController">
+   <children>
+      <ImageView fitHeight="50.0" fitWidth="58.0" layoutX="239.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-dupliquer-sur-une-nouvelle-page-50%20(1).png" />
+         </image>
+      </ImageView>
+      <Text fill="NAVY" layoutX="221.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EDIT FILE">
+         <font>
+            <Font name="Arial Black" size="17.0" />
+         </font>
+      </Text>
+      <Label layoutX="72.0" layoutY="173.0" text="Titre :" textFill="NAVY">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t" layoutX="165.0" layoutY="177.0" prefHeight="25.0" prefWidth="212.0">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tp" layoutX="166.0" layoutY="240.0" prefHeight="25.0" prefWidth="212.0" />
+      <Label layoutX="72.0" layoutY="244.0" text="Type :" textFill="NAVY">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Path" layoutX="166.0" layoutY="450.0" prefHeight="25.0" prefWidth="183.0" />
+      <Button fx:id="Add" layoutX="349.0" layoutY="450.0" mnemonicParsing="false" onAction="#upFile" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: NAVY;" text="+" textFill="WHITE" />
+      <Label layoutX="72.0" layoutY="454.0" text="Path :" textFill="NAVY">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="409.0" text="Module :" textFill="NAVY">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Mod" layoutX="166.0" layoutY="405.0" prefHeight="25.0" prefWidth="212.0" promptText="Module name ..." style="-fx-background-color: white; -fx-border-color: #cdcdcd;" />
+      <Label layoutX="72.0" layoutY="354.0" text="Niveau :" textFill="NAVY">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="302.0" text="Filiere :" textFill="NAVY">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="f" layoutX="165.0" layoutY="298.0" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: white; -fx-border-color: #cdcdcd; -fx-background-radius: 7px;" />
+      <ComboBox fx:id="nv" layoutX="165.0" layoutY="350.0" prefHeight="25.0" prefWidth="212.0" style="-fx-background-color: white; -fx-border-color: #cdcdcd;" />
+      <ImageView fx:id="Tit" fitHeight="20.0" fitWidth="20.0" layoutX="392.0" layoutY="180.0" onMouseClicked="#upTitre" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-crayon-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="type" fitHeight="20.0" fitWidth="20.0" layoutX="392.0" layoutY="243.0" onMouseClicked="#upType" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-crayon-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="filiere" fitHeight="20.0" fitWidth="20.0" layoutX="392.0" layoutY="301.0" onMouseClicked="#upFliere" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-crayon-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="niveau" fitHeight="20.0" fitWidth="20.0" layoutX="392.0" layoutY="354.0" onMouseClicked="#upNiveau" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-crayon-30.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="module" fitHeight="20.0" fitWidth="20.0" layoutX="392.0" layoutY="409.0" onMouseClicked="#upModule" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-crayon-30.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="aff" fill="#35ae52" layoutX="111.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="196.13671875">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="lien" fitHeight="20.0" fitWidth="20.0" layoutX="392.0" layoutY="450.0" onMouseClicked="#upPath" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/icons8-crayon-30.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

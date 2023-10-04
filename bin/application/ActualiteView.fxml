@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="centre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" style="-fx-background-color: #f5f5f5; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ActualiteViewController">
+   <children>
+      <ListView fx:id="myList" layoutX="40.0" layoutY="75.0" onMouseClicked="#click" prefHeight="369.0" prefWidth="473.0" stylesheets="@listeStyle.css" />
+      <Label alignment="CENTER" layoutX="19.0" layoutY="10.0" prefHeight="46.0" prefWidth="515.0" style="-fx-background-color: #ffffff;" text="Actualite  :" textFill="#7b1c80">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="9.0" layoutY="10.0" prefHeight="46.0" prefWidth="11.0" style="-fx-background-color: #7b1c80;" />
+   </children>
+</AnchorPane>

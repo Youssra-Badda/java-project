@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" style="-fx-background-color: #f5f5f5;" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ActualiteController">
+   <children>
+      <Label fx:id="titre" alignment="CENTER" layoutX="5.0" layoutY="20.0" prefHeight="60.0" prefWidth="527.0" style="-fx-background-color: white; -fx-border-color: blue; -fx-border-width: 0px 0px 0px 5px;" textFill="#0f0aff">
+         <font>
+            <Font name="Arial" size="23.0" />
+         </font></Label>
+      <Label fx:id="date" layoutX="255.0" layoutY="285.0" prefHeight="51.0" prefWidth="277.0">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font></Label>
+      <Text fx:id="contenu" layoutX="35.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="container2" wrappingWidth="488.13671875">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

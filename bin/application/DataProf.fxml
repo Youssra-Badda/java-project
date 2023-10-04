@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DataProfController">
+   <children>
+      <ScrollPane layoutX="3.0" layoutY="1.0" prefHeight="460.0" prefWidth="532.0" stylesheets="@application.css">
+         <content>
+            <TableView fx:id="table" prefHeight="527.0" prefWidth="1078.0" stylesheets="@application.css">
+              <columns>
+                <TableColumn fx:id="nom" prefWidth="75.0" style="color: blue;" text="Nom" />
+                <TableColumn fx:id="prenom" prefWidth="75.0" text="Prenom" />
+                  <TableColumn fx:id="emailc" prefWidth="185.0" text="Email academique" />
+                  <TableColumn fx:id="emailp" prefWidth="185.0" text="Email personnel" />
+                  <TableColumn fx:id="addresse" prefWidth="178.0" text="Addresse" />
+                  <TableColumn fx:id="tel" prefWidth="154.0" text="Telephone" />
+                  <TableColumn fx:id="ppr" prefWidth="97.0" text="PPR" />
+                  <TableColumn fx:id="date" prefWidth="168.0" text="Date employe" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>
